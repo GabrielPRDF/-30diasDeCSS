@@ -3,9 +3,29 @@
     height: 100%;
 }
 
-.desafio__icones {
-    font-size: 100px;
+ul {
     top: 40%;
-    position: relative;
+    margin: auto;
+    padding: 0;
+    width: fit-content;
     text-align: center;
+    position: relative;
+    font-size: 70px;
+    display: flex;
+}
+
+li {
+    position: relative;
+    list-style-type: none;
+}
+
+i {
+    position: relative;
+    padding: 25px;
+    transform: rotate(-45deg) skew(15deg, 15deg)
+}
+
+i:hover {
+    transition-duration: 1.5s;
+    transform: translate(0, 0);
 }
