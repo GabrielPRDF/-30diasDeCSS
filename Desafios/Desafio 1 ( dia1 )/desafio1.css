@@ -1,6 +1,7 @@
-.desafio {
-    width: 100%;
-    height: 100%;
+.body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -10,22 +11,23 @@ ul {
     width: fit-content;
     text-align: center;
     position: relative;
-    font-size: 70px;
     display: flex;
 }
 
 li {
+    font-size: 65px;
     position: relative;
     list-style-type: none;
+    transform: rotate(-45deg) skew(15deg, 15deg);
+    padding: 30px;
 }
 
 i {
+    z-index: 10;
     position: relative;
-    padding: 25px;
-    transform: rotate(-45deg) skew(15deg, 15deg)
 }
 
-i:hover {
+li:hover {
     transition-duration: 1.5s;
-    transform: translate(0, 0);
+    transform: rotate(-45deg) skew(15deg, 15deg) translate(40px, -40px);
 }
